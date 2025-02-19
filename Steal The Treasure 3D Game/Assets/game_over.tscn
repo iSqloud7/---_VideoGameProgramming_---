@@ -1,0 +1,48 @@
+[gd_scene load_steps=3 format=3 uid="uid://dvsmvjheo8ned"]
+
+[ext_resource type="FontFile" uid="uid://b7chckodgobiq" path="res://Fonts/Redkost Comic.otf" id="1_6hblv"]
+[ext_resource type="Script" path="res://Scripts/button_game_over.gd" id="2_5hwqy"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="."]
+custom_minimum_size = Vector2(1280, 720)
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+color = Color(0.451664, 0.014472, 0, 1)
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 119.0
+offset_top = 202.0
+offset_right = 1172.0
+offset_bottom = 365.0
+theme_override_colors/font_color = Color(0.933326, 4.81308e-06, 9.62615e-07, 1)
+theme_override_fonts/font = ExtResource("1_6hblv")
+theme_override_font_sizes/font_size = 130
+text = "GAME OVER !!!"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button_game_over" type="Button" parent="."]
+layout_mode = 0
+offset_left = 514.0
+offset_top = 498.0
+offset_right = 814.0
+offset_bottom = 595.0
+theme_override_colors/font_hover_pressed_color = Color(1, 0.882353, 0.0745098, 1)
+theme_override_colors/font_color = Color(1, 0.980392, 0.145098, 1)
+theme_override_colors/font_outline_color = Color(0.783908, 0.721542, 1.54018e-06, 1)
+theme_override_fonts/font = ExtResource("1_6hblv")
+theme_override_font_sizes/font_size = 50
+text = "Try Again"
+script = ExtResource("2_5hwqy")
+
+[connection signal="pressed" from="Button_game_over" to="Button_game_over" method="_on_buttontryagain_pressed"]

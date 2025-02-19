@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://d2omb0d874svr"]
+
+[ext_resource type="ArrayMesh" uid="uid://d0b58t3jv2w44" path="res://Assets/large_troll.tres" id="1_a4r18"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_uctj3"]
+
+[node name="StrikeSphere" type="CharacterBody3D"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("BoxShape3D_uctj3")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = ExtResource("1_a4r18")
