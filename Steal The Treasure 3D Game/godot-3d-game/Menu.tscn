@@ -1,0 +1,59 @@
+[gd_scene load_steps=4 format=3 uid="uid://ryp1ibm1kaki"]
+
+[ext_resource type="FontFile" uid="uid://b7chckodgobiq" path="res://Fonts/Redkost Comic.otf" id="1_0skuv"]
+[ext_resource type="FontFile" uid="uid://i1lgc14xmne0" path="res://Fonts/Some Time Later.otf" id="2_0fvsg"]
+[ext_resource type="Script" path="res://Scripts/button_title_play.gd" id="3_u8txr"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 0
+offset_right = 1280.0
+offset_bottom = 720.0
+color = Color(1.68458e-07, 0.197428, 0.309743, 1)
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 3.0
+offset_top = 37.0
+offset_right = 1283.0
+offset_bottom = 257.0
+rotation = 0.13439
+theme_override_colors/font_color = Color(0.36793, 0.766065, 1, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(2.11775e-06, 0, 0.598428, 1)
+theme_override_constants/line_spacing = 15
+theme_override_constants/shadow_offset_x = 30
+theme_override_constants/shadow_offset_y = 5
+theme_override_constants/outline_size = 0
+theme_override_constants/shadow_outline_size = 20
+theme_override_fonts/font = ExtResource("1_0skuv")
+theme_override_font_sizes/font_size = 80
+text = "Steal The Treasure 3D Game!"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ButtonTitlePlay" type="Button" parent="."]
+layout_mode = 0
+offset_left = 413.0
+offset_top = 484.0
+offset_right = 891.0
+offset_bottom = 633.0
+theme_override_colors/font_disabled_color = Color(0.0906983, 0.194732, 0.552773, 1)
+theme_override_colors/font_hover_pressed_color = Color(0.248166, 0.629818, 0.813161, 1)
+theme_override_colors/font_hover_color = Color(0.0540723, 0.419966, 0.514818, 1)
+theme_override_colors/font_pressed_color = Color(0.0499852, 0.128023, 0.36226, 1)
+theme_override_constants/outline_size = 50
+theme_override_fonts/font = ExtResource("2_0fvsg")
+theme_override_font_sizes/font_size = 100
+text = "Play!"
+flat = true
+script = ExtResource("3_u8txr")
+
+[connection signal="pressed" from="ButtonTitlePlay" to="ButtonTitlePlay" method="_on_buttontitleplay_pressed"]

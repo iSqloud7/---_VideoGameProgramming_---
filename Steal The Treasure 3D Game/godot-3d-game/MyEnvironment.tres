@@ -1,0 +1,28 @@
+[gd_resource type="Environment" load_steps=2 format=3 uid="uid://btr7djr2x2f0f"]
+
+[sub_resource type="Sky" id="Sky_yhioo"]
+
+[resource]
+background_mode = 1
+background_color = Color(0, 0.454902, 0.670588, 1)
+sky = SubResource("Sky_yhioo")
+sky_custom_fov = 134.5
+ambient_light_source = 3
+ambient_light_color = Color(0.997323, 0.491972, 0.75947, 1)
+ambient_light_energy = 0.0
+reflected_light_source = 2
+ssr_enabled = true
+ssr_max_steps = 104
+ssr_fade_in = 1.69705
+ssr_fade_out = 137.187
+ssao_intensity = 4.0
+ssao_sharpness = 0.0
+ssao_light_affect = 1.0
+ssil_radius = 16.0
+ssil_sharpness = 1.0
+glow_enabled = true
+glow_strength = 0.0
+glow_hdr_scale = 4.0
+adjustment_enabled = true
+adjustment_contrast = 1.08
+adjustment_saturation = 1.42
